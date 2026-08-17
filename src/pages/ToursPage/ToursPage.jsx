@@ -103,13 +103,13 @@ export default function ToursPage() {
                       {tour.description}
                     </Typography>
                     
-                    <Stack 
+                    <Box 
                       component="a" 
                       href="#contact"
-                      direction="row" 
-                      alignItems="center" 
-                      spacing={1} 
                       sx={{ 
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 1,
                         textDecoration: 'none',
                         cursor: 'pointer', 
                         color: '#0f3d39', 
@@ -123,7 +123,7 @@ export default function ToursPage() {
                         Learn More
                       </Typography>
                       <EastIcon fontSize="small" />
-                    </Stack>
+                    </Box>
                   </CardContent>
                 </Card>
               </Grid>
