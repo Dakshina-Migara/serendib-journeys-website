@@ -1,6 +1,7 @@
 import './App.css';
 import HomePage from '../pages/HomePage/HomePage';
 import AboutPage from '../pages/AboutPage/AboutPage';
+import DestinationPage from '../pages/DestinationPage/DestinationPage';
 import { CssBaseline } from '@mui/material';
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <CssBaseline />
       <HomePage />
       <AboutPage />
+      <DestinationPage />
     </>
   )
 };

@@ -7,8 +7,8 @@ export default function AboutPage() {
   return (
     <Box id="about" sx={{ backgroundColor: '#F4F1EA', py: { xs: 8, md: 12 }, width: '100%', overflow: 'hidden' }}>
       <Container maxWidth="xl">
-        <Grid container spacing={{ xs: 8, md: 10 }} alignItems="center">
-          <Grid item xs={12} md={6}>
+        <Grid container spacing={{ xs: 8, md: 10 }} sx={{ alignItems: 'center' }}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Box sx={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
               <Box
                 component="img"
@@ -50,7 +50,7 @@ export default function AboutPage() {
             </Box>
           </Grid>
 
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Box sx={{ pl: { md: 4, lg: 6 }, mt: { xs: 4, md: 0 } }}>
               <Typography variant="overline" sx={{ color: '#EAB252', fontWeight: 600, letterSpacing: 2, display: 'block', mb: 2 }}>
                 OUR STORY
