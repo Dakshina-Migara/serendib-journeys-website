@@ -42,14 +42,15 @@ export default function TestimonialsPage() {
                   height: '100%', 
                   display: 'flex', 
                   flexDirection: 'column',
-                  borderRadius: '4px',
-                  boxShadow: index === 1 ? '0 15px 40px rgba(0,0,0,0.1)' : '0 4px 20px rgba(0,0,0,0.03)',
+                  borderRadius: '20px',
+                  boxShadow: index === 1 ? '0 20px 60px rgba(0,0,0,0.06)' : '0 4px 20px rgba(0,0,0,0.03)',
                   transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                  border: '1px solid rgba(0,0,0,0.02)',
                   '&:hover': {
                     transform: 'translateY(-5px)',
-                    boxShadow: '0 15px 40px rgba(0,0,0,0.1)',
+                    boxShadow: '0 20px 60px rgba(0,0,0,0.08)',
                   },
-                  p: { xs: 1, md: 2 }
+                  p: { xs: 2, md: 3 }
                 }}
               >
                 <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>

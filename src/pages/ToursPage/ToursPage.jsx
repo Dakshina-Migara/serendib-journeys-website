@@ -71,12 +71,13 @@ export default function ToursPage() {
                     height: '100%', 
                     display: 'flex', 
                     flexDirection: 'column',
-                    borderRadius: '12px',
+                    borderRadius: '20px',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.03)',
                     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    border: '1px solid rgba(0,0,0,0.02)',
                     '&:hover': {
                       transform: 'translateY(-5px)',
-                      boxShadow: '0 12px 30px rgba(0,0,0,0.08)',
+                      boxShadow: '0 20px 60px rgba(0,0,0,0.08)',
                     }
                   }}
                 >

@@ -44,11 +44,17 @@ export default function DestinationPage() {
                 sx={{
                   width: '100%',
                   height: { xs: '250px', sm: '280px', md: '300px' },
-                  borderRadius: '12px',
+                  borderRadius: '20px',
                   overflow: 'hidden',
                   cursor: 'pointer',
+                  boxShadow: '0 8px 30px rgba(0,0,0,0.06)',
+                  transition: 'transform 0.4s ease, box-shadow 0.4s ease',
+                  '&:hover': {
+                    transform: 'translateY(-5px)',
+                    boxShadow: '0 15px 40px rgba(0,0,0,0.12)',
+                  },
                   '&:hover img': {
-                    transform: 'scale(1.05)',
+                    transform: 'scale(1.08)',
                   },
                 }}
               >
@@ -60,7 +66,7 @@ export default function DestinationPage() {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
-                    transition: 'transform 0.5s ease-in-out',
+                    transition: 'transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
                   }}
                 />
               </Box>
@@ -74,7 +80,18 @@ export default function DestinationPage() {
             sx={{ 
               borderColor: '#2C5E55', 
               color: '#2C5E55', 
-              '&:hover': { backgroundColor: 'rgba(44, 94, 85, 0.05)', borderColor: '#2C5E55' } 
+              borderRadius: '12px',
+              padding: '12px 32px',
+              fontWeight: 600,
+              borderWidth: '2px',
+              transition: 'all 0.3s ease',
+              '&:hover': { 
+                backgroundColor: '#2C5E55', 
+                color: 'white',
+                borderColor: '#2C5E55',
+                boxShadow: '0 8px 20px rgba(44, 94, 85, 0.2)',
+                transform: 'translateY(-2px)'
+              } 
             }}
           >
             View All Destinations

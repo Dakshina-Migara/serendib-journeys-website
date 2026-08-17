@@ -18,9 +18,10 @@ export default function AboutPage() {
                   width: '100%',
                   height: 'auto',
                   display: 'block',
-                  borderRadius: '4px',
+                  borderRadius: '24px',
                   objectFit: 'cover',
-                  maxHeight: { xs: '400px', md: '600px' }
+                  maxHeight: { xs: '400px', md: '600px' },
+                  boxShadow: '0 20px 60px rgba(0,0,0,0.08)'
                 }}
               />
               
@@ -29,11 +30,13 @@ export default function AboutPage() {
                   position: 'absolute',
                   bottom: { xs: -20, sm: -30 },
                   right: { xs: 10, sm: -20, md: -30 },
-                  backgroundColor: '#0f3d39',
+                  backgroundColor: 'rgba(15, 61, 57, 0.95)',
+                  backdropFilter: 'blur(10px)',
                   color: 'white',
                   px: { xs: 3, md: 5 },
                   py: { xs: 2, md: 3 },
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
+                  borderRadius: '16px',
+                  boxShadow: '0 15px 40px rgba(15, 61, 57, 0.2)',
                   zIndex: 2,
                   display: 'flex',
                   flexDirection: 'column',
