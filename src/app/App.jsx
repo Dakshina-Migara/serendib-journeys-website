@@ -1,16 +1,12 @@
 import './App.css';
-import NavBar from '../common/components/NavBar/NavBar';
-import Button from '../common/components/Button/Button';
-import StatCard from '../common/components/Statcard/StatCard';
-import TextField from '../common/components/TextField/TextField';
-import DateFilter from '../common/components/DateFilter/DateFilter';
+import HomePage from '../pages/HomePage/HomePage';
+import { CssBaseline } from '@mui/material';
 
-function App() {
+export default function App() {
   return (
     <>
-      <DateFilter />
+      <CssBaseline />
+      <HomePage />
     </>
   )
-}
-
-export default App
+};
