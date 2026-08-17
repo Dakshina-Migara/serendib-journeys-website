@@ -26,9 +26,9 @@ export default function HomePage() {
           flexGrow: 1, 
           display: 'flex', 
           flexDirection: 'column', 
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           pb: { xs: 4, md: 8 },
-          pt: { xs: 4, md: 0 }
+          pt: { xs: 16, md: 24 }
         }}
       >
         <Box sx={{ maxWidth: { xs: '100%', md: '75%', lg: '60%' } }}>
