@@ -46,7 +46,7 @@ export default function ContactPage() {
                     }
                   }}
                 >
-                  <CardContent sx={{ p: '20px 24px !important', display: 'flex', alignItems: 'center' }}>
+                  <CardContent sx={{ p: { xs: '16px !important', sm: '20px 24px !important' }, display: 'flex', alignItems: 'center' }}>
                     <Box sx={{ 
                       width: 52, 
                       height: 52, 
@@ -55,15 +55,16 @@ export default function ContactPage() {
                       display: 'flex', 
                       alignItems: 'center', 
                       justifyContent: 'center',
-                      mr: 3
+                      mr: { xs: 2, sm: 3 },
+                      flexShrink: 0
                     }}>
                       {item.icon}
                     </Box>
-                    <Box>
+                    <Box sx={{ minWidth: 0, overflow: 'hidden' }}>
                       <Typography variant="caption" sx={{ color: '#888', letterSpacing: 1.5, fontWeight: 700, display: 'block', mb: 0.5 }}>
                         {item.label}
                       </Typography>
-                      <Typography variant="subtitle1" sx={{ color: '#1a1a1a', fontWeight: 600, fontSize: '1.1rem' }}>
+                      <Typography variant="subtitle1" sx={{ color: '#1a1a1a', fontWeight: 600, fontSize: { xs: '0.95rem', sm: '1.1rem' }, wordBreak: 'break-word' }}>
                         {item.text}
                       </Typography>
                     </Box>
@@ -90,8 +91,8 @@ export default function ContactPage() {
                     fullWidth 
                     variant="outlined" 
                     placeholder="Hannah Wexler" 
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '12px', 
                         backgroundColor: '#fbfbfb',
                         '& fieldset': { borderColor: 'rgba(0,0,0,0.08)' },
@@ -108,8 +109,8 @@ export default function ContactPage() {
                     fullWidth 
                     variant="outlined" 
                     placeholder="you@example.com"
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '12px', 
                         backgroundColor: '#fbfbfb',
                         '& fieldset': { borderColor: 'rgba(0,0,0,0.08)' },
@@ -127,8 +128,8 @@ export default function ContactPage() {
                     type="date"
                     fullWidth 
                     variant="outlined" 
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '12px', 
                         backgroundColor: '#fbfbfb',
                         color: '#666',
@@ -146,8 +147,8 @@ export default function ContactPage() {
                     type="date"
                     fullWidth 
                     variant="outlined" 
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '12px', 
                         backgroundColor: '#fbfbfb',
                         color: '#666',
@@ -168,8 +169,8 @@ export default function ContactPage() {
                     fullWidth 
                     variant="outlined" 
                     placeholder="Two adults, first visit, keen on wildlife and the hill country train..."
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '16px', 
                         backgroundColor: '#fbfbfb',
                         '& fieldset': { borderColor: 'rgba(0,0,0,0.08)' },

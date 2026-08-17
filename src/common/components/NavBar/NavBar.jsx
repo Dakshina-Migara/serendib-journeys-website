@@ -12,7 +12,7 @@ const defaultPages = [
   { label: 'Contact', path: '#contact' }
 ];
 
-export default function NavBar({ pages = defaultPages, logoText = 'Serendib Journeys', logoSubText = 'SRI LANKA', actionButtonText = 'Plan Your Trip', actionButtonPath = '/plan', LogoIcon = ExploreOutlinedIcon, ...props }) {
+export default function NavBar({ pages = defaultPages, logoText = 'Serendib Journeys', logoSubText = 'SRI LANKA', actionButtonText = 'Plan Your Trip', actionButtonPath = '#contact', LogoIcon = ExploreOutlinedIcon, ...props }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
