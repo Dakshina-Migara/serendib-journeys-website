@@ -5,11 +5,11 @@ import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 import CustomButton from '../Button/Button';
 
 const defaultPages = [
-  { label: 'Home', path: '/' },
-  { label: 'About', path: '/about' },
-  { label: 'Destinations', path: '/destinations' },
-  { label: 'Tours', path: '/tours' },
-  { label: 'Contact', path: '/contact' }
+  { label: 'Home', path: '#' },
+  { label: 'About', path: '#about' },
+  { label: 'Destinations', path: '#destinations' },
+  { label: 'Tours', path: '#tours' },
+  { label: 'Contact', path: '#contact' }
 ];
 
 export default function NavBar({ pages = defaultPages, logoText = 'Serendib Journeys', logoSubText = 'SRI LANKA', actionButtonText = 'Plan Your Trip', actionButtonPath = '/plan', LogoIcon = ExploreOutlinedIcon, ...props }) {
