@@ -1,16 +1,24 @@
 import './App.css';
-import NavBar from '../common/components/NavBar/NavBar';
-import Button from '../common/components/Button/Button';
-import StatCard from '../common/components/Statcard/StatCard';
-import TextField from '../common/components/TextField/TextField';
-import DateFilter from '../common/components/DateFilter/DateFilter';
+import HomePage from '../pages/HomePage/HomePage';
+import AboutPage from '../pages/AboutPage/AboutPage';
+import DestinationPage from '../pages/DestinationPage/DestinationPage';
+import ToursPage from '../pages/ToursPage/ToursPage';
+import TestimonialsPage from '../pages/TestimonialsPage/TestimonialsPage';
+import ContactPage from '../pages/ContactPage/ContactPage';
+import Footer from '../common/components/Footer/Footer';
+import { CssBaseline } from '@mui/material';
 
-function App() {
+export default function App() {
   return (
     <>
-      <DateFilter />
+      <CssBaseline />
+      <HomePage />
+      <AboutPage />
+      <DestinationPage />
+      <ToursPage />
+      <TestimonialsPage />
+      <ContactPage />
+      <Footer />
     </>
   )
-}
-
-export default App
+};
