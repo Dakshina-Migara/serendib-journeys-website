@@ -73,10 +73,10 @@ export default function HomePage() {
           </Typography>
           
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
-            <Button variant="contained">
+            <Button variant="contained" href="#contact">
               Plan Your Trip
             </Button>
-            <Button variant="outlined">
+            <Button variant="outlined" href="#tours">
               View Tours
             </Button>
           </Stack>

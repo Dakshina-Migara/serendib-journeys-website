@@ -103,7 +103,22 @@ export default function ToursPage() {
                       {tour.description}
                     </Typography>
                     
-                    <Stack direction="row" alignItems="center" spacing={1} sx={{ cursor: 'pointer', color: '#0f3d39', mt: 'auto', '&:hover': { color: '#EAB252' }, transition: 'color 0.3s', width: 'fit-content' }}>
+                    <Stack 
+                      component="a" 
+                      href="#contact"
+                      direction="row" 
+                      alignItems="center" 
+                      spacing={1} 
+                      sx={{ 
+                        textDecoration: 'none',
+                        cursor: 'pointer', 
+                        color: '#0f3d39', 
+                        mt: 'auto', 
+                        '&:hover': { color: '#EAB252' }, 
+                        transition: 'color 0.3s', 
+                        width: 'fit-content' 
+                      }}
+                    >
                       <Typography variant="subtitle2" sx={{ fontWeight: 600 }}>
                         Learn More
                       </Typography>

@@ -90,8 +90,8 @@ export default function ContactPage() {
                     fullWidth 
                     variant="outlined" 
                     placeholder="Hannah Wexler" 
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '12px', 
                         backgroundColor: '#fbfbfb',
                         '& fieldset': { borderColor: 'rgba(0,0,0,0.08)' },
@@ -108,8 +108,8 @@ export default function ContactPage() {
                     fullWidth 
                     variant="outlined" 
                     placeholder="you@example.com"
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '12px', 
                         backgroundColor: '#fbfbfb',
                         '& fieldset': { borderColor: 'rgba(0,0,0,0.08)' },
@@ -127,8 +127,8 @@ export default function ContactPage() {
                     type="date"
                     fullWidth 
                     variant="outlined" 
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '12px', 
                         backgroundColor: '#fbfbfb',
                         color: '#666',
@@ -146,8 +146,8 @@ export default function ContactPage() {
                     type="date"
                     fullWidth 
                     variant="outlined" 
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '12px', 
                         backgroundColor: '#fbfbfb',
                         color: '#666',
@@ -168,8 +168,8 @@ export default function ContactPage() {
                     fullWidth 
                     variant="outlined" 
                     placeholder="Two adults, first visit, keen on wildlife and the hill country train..."
-                    InputProps={{ 
-                      sx: { 
+                    sx={{ 
+                      '& .MuiOutlinedInput-root': {
                         borderRadius: '16px', 
                         backgroundColor: '#fbfbfb',
                         '& fieldset': { borderColor: 'rgba(0,0,0,0.08)' },
